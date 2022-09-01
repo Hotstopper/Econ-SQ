@@ -1,0 +1,50 @@
+body {background-color: rgba(50, 50, 50, 0.8)}
+
+h1 {
+    color: rgba(255,255,255,1)
+}
+
+#answer{
+    color: rgba(255, 60, 60, 1);
+}
+
+#question{
+    color: rgba(255,255,255,1);
+}
+
+.pagecontainer {
+    position: relative;
+    height: 96vh;
+}
+
+.buttoncontainer {
+    position: absolute;
+    top: 90vh;
+    width: 95vw;
+}
+
+.nextbutton {
+    background-color: rgba(25,25,25,0.8);
+    color: rgba(255,255,255,1);
+    transition: all 0.2s;
+    width: 10vw;
+    height: 5vh;
+}
+
+.nextbutton:hover {
+    color: rgba(0,0,0,1);
+    background-color: rgba(255,255,255,1);
+}
+
+.answerbutton {
+    background-color: rgba(25,25,25,0.8);
+    color: rgba(255,255,255,1);
+    transition: all 0.2s;
+    width: 10vw;
+    height: 5vh;
+}
+
+.answerbutton:hover {
+    color: rgba(0,0,0,1);
+    background-color: rgba(255,255,255,1);
+}

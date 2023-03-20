@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Econ DSE SQ</title>
+</head>
+
+<body>
+    <button onclick="togglerepeatquestion()">Chronological Questions</button>
+    <button onclick="togglerandomquestion()">Random Question</button><br>
+    <button id="0" onclick="getquestionnumber(this.id)">1. Time cost</button><br> 
+    <button id="1" onclick="getquestionnumber(this.id)">2. Changes in opportunity costs (Version 1)</button><br>
+    <button id="2" onclick="getquestionnumber(this.id)">3. Full cost</button><br>
+    <button id="3" onclick="getquestionnumber(this.id)">4. Changes in opportunity costs (Version 2)</button><br>
+    <button id="4" onclick="getquestionnumber(this.id)">5. Free Goods</button><br>
+    <button id="5" onclick="getquestionnumber(this.id)">6. Interest</button><br>
+    <button id="6" onclick="getquestionnumber(this.id)">7. Private Property Rights</button><br>
+    <button id="7" onclick="getquestionnumber(this.id)">8. Positive/Normative Statements</button><br>
+    <button id="8" onclick="getquestionnumber(this.id)">9. Relative price</button><br>
+    <button id="9" onclick="getquestionnumber(this.id)">10. Simple Demand and Supply diagram - Measures to Relieve Shortage</button><br>
+    <button id="10" onclick="getquestionnumber(this.id)">11. Factors Affecting Demand</button><br>
+    <button id="11" onclick="getquestionnumber(this.id)">12. Explain Changes in Stock Prices</button><br>
+    <button id="12" onclick="getquestionnumber(this.id)">13. Shift in Demand + Shift in Supply</button><br>
+    <button id="13" onclick="getquestionnumber(this.id)">14. Conditions where Total Expenditure would Increase/Decrease</button><br>
+    <button id="14" onclick="getquestionnumber(this.id)">15. Verbal Elaboration using Elasticty</button><br>
+    <button id="15" onclick="getquestionnumber(this.id)">16. Price Control with Diagram</button><br>
+    <button id="16" onclick="getquestionnumber(this.id)">17. Price Control Effects</button><br>
+    <button id="17" onclick="getquestionnumber(this.id)">18. Quota with Diagram</button><br>
+    <button id="18" onclick="getquestionnumber(this.id)">19. Distribution of Tax Burdens</button><br>
+    <button id="19" onclick="getquestionnumber(this.id)">20. Distribution of Subsidy</button><br>
+    <button id="20" onclick="getquestionnumber(this.id)">21. Private limited companies vs. Listed companies</button><br>
+    <button id="21" onclick="getquestionnumber(this.id)">22. Partnerships vs. Public Limited Companies</button><br>
+    <button id="22" onclick="getquestionnumber(this.id)">23. Public Corporations</button><br>
+    <button id="23" onclick="getquestionnumber(this.id)">24. Buying Bonds vs Shares</button><br>
+    <button id="24" onclick="getquestionnumber(this.id)">25. Issuing Bonds vs Shares</button><br>
+    <button id="25" onclick="getquestionnumber(this.id)">26. Public Goods</button><br>
+    <button id="26" onclick="getquestionnumber(this.id)">27. Types of Production</button><br>
+    <button id="27" onclick="getquestionnumber(this.id)">28. Division of Labour</button><br>
+    <button id="28" onclick="getquestionnumber(this.id)">29. Average Labour Productivity</button><br>
+    <button id="29" onclick="getquestionnumber(this.id)">30. Occupational Mobility</button><br>
+    <button id="30" onclick="getquestionnumber(this.id)">31. Geographical Mobility</button><br>
+    <button id="31" onclick="getquestionnumber(this.id)">32. Comparison of Types of Wage Payments</button><br>
+    <button id="32" onclick="getquestionnumber(this.id)">33. Factors of Production</button><br>
+    <button id="33" onclick="getquestionnumber(this.id)">34. Law of Diminishing Marginal Returns</button><br>
+    <button id="34" onclick="getquestionnumber(this.id)">35. Variable and Fixed Costs</button><br>
+    <button id="35" onclick="getquestionnumber(this.id)">36. Internal Economies/Diseconomies of Scale</button><br>
+    <button id="36" onclick="getquestionnumber(this.id)">37. External Economies/Diseconomies of Scale</button><br>
+    <button id="37" onclick="getquestionnumber(this.id)">38. Motives for Expansion</button><br>
+    <button id="38" onclick="getquestionnumber(this.id)">39. Features of Different Market Structures</button><br>
+    <button id="39" onclick="getquestionnumber(this.id)">40. Not Perfect Competition</button><br>
+    <button id="40" onclick="getquestionnumber(this.id)">41. Profit Maximisation and Output Determination</button><br>
+    <button id="41" onclick="getquestionnumber(this.id)">42. Identify Change in Consumer Surplus or Producer Surplus</button><br>
+    <button id="42" onclick="getquestionnumber(this.id)">43. Definition of Deadweight Loss</button><br>
+    <button id="43" onclick="getquestionnumber(this.id)">44. Functions of Price</button><br>
+    <button id="44" onclick="getquestionnumber(this.id)">45. Inefficiency for Different Stakeholders</button><br>
+    <button id="45" onclick="getquestionnumber(this.id)">46. Restoring Efficiency</button><br>
+    <button id="46" onclick="getquestionnumber(this.id)">47. Explain Inefficiency</button><br>
+    <button id="47" onclick="getquestionnumber(this.id)">48. Identify and Explain Externalities</button><br>
+    <button id="48" onclick="getquestionnumber(this.id)">49. Relieving Externalities by Market Measures</button><br>
+    <button id="49" onclick="getquestionnumber(this.id)">50. Relieving Externalities through Policies</button><br>
+    <button id="50" onclick="getquestionnumber(this.id)">51. Factors affecting Income Inequality</button><br>
+    <button id="51" onclick="getquestionnumber(this.id)">52. Gini Coefficient</button><br>
+    <button id="52" onclick="getquestionnumber(this.id)">53. How Policies Enhance Equality</button><br>
+    <button id="53" onclick="getquestionnumber(this.id)">54. How Policies Enhance Equity</button><br>
+    <button id="54" onclick="getquestionnumber(this.id)">55. Evaluate in terms of Equality</button><br>
+    <button id="55" onclick="getquestionnumber(this.id)">56. Criteria for being Counted in GDP (Version 1)</button><br>
+    <button id="56" onclick="getquestionnumber(this.id)">57. Criteria for being Counted in GDP (Version 2)</button><br>
+    <button id="57" onclick="getquestionnumber(this.id)">58. Calculation of GDP and GNP</button><br>
+    <button id="58" onclick="getquestionnumber(this.id)">59. Changes to GDP (Version 1)</button><br>
+    <button id="59" onclick="getquestionnumber(this.id)">60. Changes to GDP (Version 2)</button><br>
+    <button id="60" onclick="getquestionnumber(this.id)">61. Changes to GDP (Version 3)</button><br>
+    <button id="61" onclick="getquestionnumber(this.id)">62. CPI vs GDP Deflator</button><br>
+    <button id="62" onclick="getquestionnumber(this.id)">63. Per Capita Real GDP and General Living Standards</button><br>
+    <button id="63" onclick="getquestionnumber(this.id)">64. Definition of Inflation</button><br>
+    <button id="64" onclick="getquestionnumber(this.id)">65. Real Income and Inflation</button><br>
+    <button id="65" onclick="getquestionnumber(this.id)">66. Nominal Interest Rate and Real Interest Rate</button><br>
+    <button id="66" onclick="getquestionnumber(this.id)">67. Expected vs Real Interest Rates</button><br>
+    <button id="67" onclick="getquestionnumber(this.id)">68. Wealth Redistribution during Unexpected Price Level Changes</button><br>
+    <button id="68" onclick="getquestionnumber(this.id)">69. Losses caused by Unemployment</button><br>
+    <button id="69" onclick="getquestionnumber(this.id)">70. Changes in Unemployment Rate</button><br>
+    <button id="70" onclick="getquestionnumber(this.id)">71. Phases of Business Cycles</button><br>
+    <button id="71" onclick="getquestionnumber(this.id)">72. Downward-sloping Aggregate Demand Curve</button><br>
+    <button id="72" onclick="getquestionnumber(this.id)">73. Upward-sloping/Vertical Short-run/Long-run Aggregate Supply Curve</button><br>
+    <button id="73" onclick="getquestionnumber(this.id)">74. Simple ASAD Diagram</button><br>
+    <button id="74" onclick="getquestionnumber(this.id)">75. Verbal Elaboration on SRAS</button><br>
+    <button id="75" onclick="getquestionnumber(this.id)">76. Verbal Elaboration on Closing Output Gaps</button><br>
+    <button id="76" onclick="getquestionnumber(this.id)">77. Diagrams and Verbal Elaboration on Closing Output Gaps</button><br>
+    <button id="77" onclick="getquestionnumber(this.id)">78. Taxation Principle of Hong Kong</button><br>
+    <button id="78" onclick="getquestionnumber(this.id)">79. Direct and Indirect Taxes</button><br>
+    <button id="79" onclick="getquestionnumber(this.id)">80. Principles of Taxation by Adam Smith</button><br>
+    <button id="80" onclick="getquestionnumber(this.id)">81. Factors affecting Government Revenue and Expenditure</button><br>
+    <button id="81" onclick="getquestionnumber(this.id)">82. Incentive/Disincentive Effects</button><br>
+    <button id="82" onclick="getquestionnumber(this.id)">83. Advantages of Indirect Taxes</button><br>
+    <button id="83" onclick="getquestionnumber(this.id)">84. Tax Base</button><br>
+    <button id="84" onclick="getquestionnumber(this.id)">85. Factors affecting Fiscal Balance</button><br>
+    <button id="85" onclick="getquestionnumber(this.id)">86. Effects of Expansionary Fiscal Policy in the Long-run</button><br>
+    <button id="86" onclick="getquestionnumber(this.id)">87. Reducing Budget Deficits (Evaluate the Proposal)</button><br>
+    <button id="87" onclick="getquestionnumber(this.id)">88. Cash-sharing vs Investment (Discuss Arguments FOR and AGAINST)</button><br>
+    <button id="88" onclick="getquestionnumber(this.id)">89. Desirable Properties of Money</button><br>
+    <button id="89" onclick="getquestionnumber(this.id)">90. Functions of Money</button><br>
+    <button id="90" onclick="getquestionnumber(this.id)">91. Problem of Exchange in a Barter Economy</button><br>
+    <button id="91" onclick="getquestionnumber(this.id)">92. Money Supply vs Monetary Base (Version 1)</button><br>
+    <button id="92" onclick="getquestionnumber(this.id)">93. Money Supply vs Monetary Base (Version 2)</button><br>
+    <button id="93" onclick="getquestionnumber(this.id)">94. Describe Money Creation/Destruction</button><br>
+    <button id="94" onclick="getquestionnumber(this.id)">95. The Cost of Holding Money</button><br>
+    <button id="95" onclick="getquestionnumber(this.id)">96. Monetary Policy with Diagram</button><br>
+    <button id="96" onclick="getquestionnumber(this.id)">97. Fiscal Policy vs Monetary Policy</button><br>
+    <button id="97" onclick="getquestionnumber(this.id)">98. Quantity Theory of Money</button><br>
+    <button id="98" onclick="getquestionnumber(this.id)">99. Absolute Advantage (Version 1)</button><br>
+    <button id="99" onclick="getquestionnumber(this.id)">100. Absolute Advantage (Version 2)</button><br>
+    <button id="100" onclick="getquestionnumber(this.id)">101. Comparative Advantage</button><br>
+    <button id="101" onclick="getquestionnumber(this.id)">102. Principle of Comparative Advantage</button><br>
+    <button id="102" onclick="getquestionnumber(this.id)">103. Import Quota in a Small Open Economy</button><br>
+    <button id="103" onclick="getquestionnumber(this.id)">104. Exchange Rate (Version 1)</button><br>
+    <button id="104" onclick="getquestionnumber(this.id)">105. Exchange Rate (Version 2)</button><br>
+    <button id="105" onclick="getquestionnumber(this.id)">106. Balance of Payments Calculations</button><br>
+    <button id="106" onclick="getquestionnumber(this.id)">107. Changes in the Current Account</button><br>
+    <button id="107" onclick="getquestionnumber(this.id)">108. Components of the Current Account</button><br>
+    <button id="108" onclick="getquestionnumber(this.id)">109. Changes in Balance of Payments</button><br>
+    <p>Is anyone actually using this? If you actually find this helpful, shoot me a message.</p>
+    <script src="script.js"></script>
+</body>
+</html>

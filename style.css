@@ -1,34 +1,100 @@
-body {background-color: rgba(50, 50, 50, 0.8)}
+body {background-color: rgba(50, 50, 50, 1)}
 
 h1 {
-    color: rgba(255,255,255,1)
+    color: rgba(255,255,255,1);
+    text-align: center;
+}
+
+#question {
+    height: 20vh;
+    border: 1px solid white;
+    margin: 0;
+    padding-left: 1vw;
+    padding-right: 1vw; 
+    font-size: 2.5vh; 
+    line-height: 1.5;
+    color: rgba(255,255,255,1);
+    overflow: auto;
 }
 
 #answer{
-    color: rgba(255, 60, 60, 1);
+    height: 50vh;
+    width: 47%;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-top: 3vh;
+    margin-bottom: 0;
+    margin-left: 1vw;
+    margin-right: 0;
+    font-size: 2.5vh;
+    line-height: 1.25;
+    color: rgb(255, 75, 75);
+    border-top: 0.15vh solid white;
+    border-bottom: 0.15vh solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    overflow: auto;
+    float: right;
 }
 
-#question{
-    color: rgba(255,255,255,1);
+#userinput{
+    height: 50vh;
+    width: 47%;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-top: 3vh;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 2.5vh;
+    line-height: 1.25;
+    color: white;
+    border-top: 0.15vh solid white;
+    border-bottom: 0.15vh solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    overflow: auto;
+    display: none;
 }
 
-.pagecontainer {
+#textbox{
+    height: 50vh;
+    width: 97.5%;
+    padding-top: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-top: 3vh;
+    font-size: 2.5vh;
+    line-height: 1.25;
+    font-family: "Times New Roman";
+    background-color: rgba(75, 75, 75, 1);
+    color: white;
     position: relative;
-    height: 96vh;
 }
 
-.buttoncontainer {
-    position: absolute;
-    top: 90vh;
-    width: 95vw;
+.buttoncontainer{
+    background-color: rgba(50, 50, 50, 1);
+    border-top: 1px solid white;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
 }
-
 .nextbutton {
     background-color: rgba(25,25,25,0.8);
     color: rgba(255,255,255,1);
     transition: all 0.2s;
-    width: 10vw;
-    height: 5vh;
+    width: 5rem;
+    height: 3rem;
+    position: fixed;
+    bottom: 2vh;
+    left: 5vw;
+    border: 3px solid white;
+    font-size: 16px;
 }
 
 .nextbutton:hover {
@@ -40,11 +106,35 @@ h1 {
     background-color: rgba(25,25,25,0.8);
     color: rgba(255,255,255,1);
     transition: all 0.2s;
-    width: 10vw;
-    height: 5vh;
+    width: 5rem;
+    height: 3rem;
+    position: fixed;
+    bottom: 2vh;
+    right: 5vw;
+    border: 3px solid white;
+    font-size: 16px;
 }
 
 .answerbutton:hover {
+    color: rgba(0,0,0,1);
+    background-color: rgba(255,255,255,1);
+}
+
+.againbutton {
+    background-color: rgba(25,25,25,0.8);
+    color: rgba(255,255,255,1);
+    transition: all 0.2s;
+    width: 5rem;
+    height: 3rem;
+    position: fixed;
+    bottom: 2vh;
+    left: 45vw;
+    border: 3px solid white;
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+.againbutton:hover {
     color: rgba(0,0,0,1);
     background-color: rgba(255,255,255,1);
 }
